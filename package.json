@@ -1,0 +1,23 @@
+{
+  "name": "king-of-my-castle",
+  "version": "1.0.0",
+  "description": "## Description Due to my idea that it should be possible to build an easy alarm panel with an Raspberry Pi, this project contains my try on this.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midnightrun/king-of-my-castle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midnightrun/king-of-my-castle/issues"
+  },
+  "homepage": "https://github.com/midnightrun/king-of-my-castle#readme"
+}
