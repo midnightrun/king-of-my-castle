@@ -6,25 +6,16 @@ sensor.watch(function(err, value) {
     if (err)
         exit(err);
 
-    if (value  == 1) {
-        console.log('Someone entered your kingdom!')
-        led.write(value, function() {
-            console.log('LED state: 1');
-        });
-    } 
-    else {
-        console.log('No one here.')
-        led.write(value, function() {
-            console.log('LED state: 0');
-        });
-    }
-
+    console.log('Someone entered your kingdom!');
+    led.writeSync(value);
 });
 
 function exit(err) {
     if (err)
         console.log('An error occurred: ' + err);
     sensor.unexport();
+    led.writeSync(0);
+    led.unexport();
     console.log('Bye, bye!');
     process.exit();
 }
