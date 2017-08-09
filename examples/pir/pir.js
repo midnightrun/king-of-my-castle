@@ -6,7 +6,7 @@ sensor.watch(function(err, value) {
     if (err)
         exit(err);
 
-    if (value  === true) {
+    if (value  == 1) {
         console.log('Someone entered your kingdom!')
         led.write(value, function() {
             console.log('LED state: 1');
@@ -15,7 +15,7 @@ sensor.watch(function(err, value) {
     else {
         console.log('No one here.')
         led.write(value, function() {
-            console.log('LED state: ');
+            console.log('LED state: 0');
         });
     }
 
